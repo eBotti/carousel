@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+p{
+  margin: 0;
+  padding: 0;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  display: relative;
+  width: 100%;
+  height: 100%;
+}
+.swiper-wrapper {
+  display: relative;
+  width:100vw;
+  height: 100%;
+  margin:0px;
+  padding: 0px;
+  overflow: hidden;
+}
+.swiper-slides {
+  width: 99999px;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -ms-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s linear;
+}
+.swiper-slides li {
+  float: left;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.swiper-slides > *{
+  height: 100%
+}
+
+.swiper-pagination{
+  position:absolute;
+  text-align: center;
+  transition: 0.3s opacity;
+  transform: translate3d(0,0,0);
+  z-index: 10;
+  width: 100%;
+  bottom: 20px;
+}
+
+.swiper-pagination span {
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  border-radius: 0px;
+  margin: 0 7px;
+  height: 3px;
+  background: rgba(201, 201, 201, 0.7);
+  border: 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+.swiper-pagination span::before {
+  position: absolute;
+  width: 0;
+  background-color: #fff;
+  content: "";
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.bullet-active::before{
+  content: "";
+  width: 100% !important;
+  transition: width 3s;
+}

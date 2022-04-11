@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+.container {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container>p{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.content {
+  position: relative;
+  height: 100%;
+  width: 100%
+}
+
+.content>div{
+  position: absolute;
+  width: 50rem;
+  height: 30rem;
+  margin: auto;
+  top: 0;
+  left: -30vw;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+}
+
+.content h1 {
+  font-size: 4rem;
+  line-height: 10rem;
+}
+
+.content p{
+  font-size: 2rem;
+}
